@@ -31,10 +31,10 @@
 
 // When using the last item on the list as a pivot
     // input: 14, 17, 13, 15, 19, 10, 3, 16, 9, 12
-    // first partition: 9, 3, 10, 12, 14, 17, 13, 15, 19, 16
-    // second partition: 3, 9, 10, 12, 14, 17, 13, 15, 19, 16
+    // first partition: 10, 3, 9, 12, 14, 17, 13, 15, 19, 16
+    // second partition: 10, 3, 9, 12, 14, 13, 15, 16, 17, 19
 
 // When using the first item on the list as a pivot
     // input: 14, 17, 13, 15, 19, 10, 3, 16, 9, 12
-    // first partition: 12, 9, 3, 10, 13, 14, 17, 15, 19, 16
-    //second partition: 13, 10, 3, 9, 12, 14, 17, 15, 19, 16
+    // first partition: 13, 10, 3, 9, 12, 14, 17, 15, 19, 16
+    // second partition: 13, 10, 3, 9, 12, 14, 15, 16, 17, 19
