@@ -9,7 +9,6 @@ function mSort(array) {
     let right = array.slice(middle, array.length);
 
     count++
-    console.log(`${count} pass`, array)
     left = mSort(left);
     right = mSort(right);
     return merge(left, right, array);
@@ -20,7 +19,7 @@ function merge(left, right, array) {
     let leftIndex = 0;
     let rightIndex = 0;
     let outputIndex = 0;
-
+    console.log(array)
     // loop through until there are 1 or more items left in BOTH left and right arrays
     while (leftIndex < left.length && rightIndex < right.length) {
         // check if the item in the left array is less than item in right array
@@ -54,7 +53,6 @@ function merge(left, right, array) {
         outputIndex++;
     }
     mergeCount++
-    console.log(`${mergeCount} merge`, array)
     return array;
 };
 
